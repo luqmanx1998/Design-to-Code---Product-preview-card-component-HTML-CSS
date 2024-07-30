@@ -1,0 +1,170 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*-------------CUSTOM STYLES-------------*/
+
+:root {
+    --color-primary-1: hsl(158, 36%, 37%);
+    --color-primary-2: hsl(30, 38%, 92%);
+    --color-neutral-1: hsl(212, 21%, 14%);
+    --color-neutral-2: hsl(228, 12%, 48%);
+    --color-neutral-3: hsl(0, 0%, 100%);
+    --border-radius: 0.8rem;
+    --margin-bottom-sm: 1rem;
+    --margin-bottom-md: 1.6rem;
+    --margin-bottom-lrg: 2rem;
+}
+
+/*---------------CSS RESET---------------*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+/*-----------------------------------------*/
+
+
+/*--------------GENERAL STYLES-------------*/
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-color: var(--color-primary-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+}
+
+p {
+    font-size: 1.4rem;
+    color: var(--color-neutral-2);
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+/*----------------------------------------*/
+
+.component {
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    max-width: 60rem;
+}
+
+.component__img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+.component__description-box {
+    background-color: var(--color-neutral-3);
+    padding: 3rem;
+}
+
+
+.component__header {
+    display: block;
+    color: var(--color-neutral-2);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+.component__header {
+    margin-bottom: var(--margin-bottom-sm);
+}
+
+.component__title {
+    line-height: 1;
+    margin-bottom: var(--margin-bottom-md);
+}
+
+.component__description {
+    margin-bottom: var(--margin-bottom-lrg);
+    line-height: 1.8;
+}
+
+.component__price-box {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: var(--margin-bottom-md);
+}
+
+.component__price-box h1 {
+    color: var(--color-primary-1);
+}
+
+.component__price-box span {
+    color: var(--color-neutral-2);
+    text-decoration: line-through;
+    font-size: 1.4rem;
+}
+
+.btn {
+    background-color: var(--color-primary-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1.2rem;
+    border: none;
+    padding: 2rem;
+    font-family: inherit;
+    font-weight: 700;
+    border-radius: var(--border-radius);
+    transition: all .2s;
+}
+
+.btn p {
+    color: var(--color-neutral-3);
+    font-size: 1.6rem;
+}
+
+.btn img {
+    height: 1.8rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: hsl(158, 46%, 17%);
+}
+
+/*----------RESPONSIVE STYLES----------- */
+
+@media only screen and (min-width: 37.5em) /*600px*/{
+    .component {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .btn p {
+        font-size: 1.4rem;
+    }
+
+    .btn img {
+        height: 1.6rem;
+    }
+}
