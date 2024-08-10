@@ -2,6 +2,8 @@
 
 Design provided by Frontend Mentor @https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa
 
+Coded entirely with HTML/CSS.
+
 
 ![DESIGN-IMG](design/desktop-design.jpg)
 
